@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Medical Clinic</title>
+    <link rel="icon" href="assets/images/4.jpg">
+    <style>
+        .carousel {
+            max-width: 1000px;
+            /* تصغير عرض السلايدر */
+            margin: auto;
+            /* توسيطه في المنتصف */
+        }
+
+        .carousel-item img {
+            max-height: 800px;
+            height: 500px;
+            /* تقليل ارتفاع الصور */
+            width: 100%;
+            /* تأكد أن الصور تأخذ العرض بالكامل */
+            object-fit: cover;
+            /* ضمان تناسب الصورة بدون تمدد */
+            border-radius: 10px;
+            /* تنعيم الحواف */
+        }
+    
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white">
+    <nav class="bg-gradient-to-r from-purple-600 to-blue-500 p-4 shadow-blue-400/100 ">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold ">Pal Medical clinic</h1>
+        </div>
+    </nav>
+    <div class="container">
+        <nav class=" mt-6 text-gray-300 ">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item underline"><a href="#home">home</a> </li>
+                <li class="breadcrumb-item underline"><a href="#about">about</a> </li>
+                <li class="breadcrumb-item underline"><a href="#registration">Registration</a> </li>
+                <li class="breadcrumb-item underline"><a href="#contact">contact</a> </li>
+
+            </ul>
+        </nav>
+<section id="home" class=" container text-center py-24"> 
+    <h1 class="m-3 text-5xl font-extrabold">home</h1>
+    <h2 class="text-4xl text-purple-300 font-extrabold">Welcome Pal Medical clinic</h2>
+    <p class="m-4 text-gray-400">A modern site for your Medical Situations</p>
+    <!-- Slider container -->
+    <div id="C1" class="carousel slide" data-bs-ride="carousel"data-bs-interval="2000">
+
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#C1" data-bs-slide-to="0" class="active"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#C1" data-bs-slide-to="1" ></button>
+            <button type="button" data-bs-target="#C1" data-bs-slide-to="2" ></button>
+            <button type="button" data-bs-target="#C1" data-bs-slide-to="3" ></button>
+
+        </div>
+
+        <!-- Images -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/images/1.jpg" alt="" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/2.jpg" alt="" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/3.jpg" alt="" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/4.jpg" alt="" class="d-block w-100">
+            </div>
+        </div>
+
+        <!-- Left & Right Buttons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#C1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#C1" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <button class="mt-6 px-7 py-3 bg-purple-600  rounded-lg hover:bg-purple-800"><a href="#registration">Get Started</a></button>
+    <p></p>    
+</section>
+
+<section id="about">
+    <h1 class="text-5xl font-extrabold ">about</h1>
+    <p class="mt-4 ">Welcome to Pal Medical clinic,
+         where compassionate care meets medical excellence. 
+         Our dedicated team of healthcare professionals provides 
+         personalized treatments using the latest medical advancements. 
+         Whether you need routine check-ups, specialized care,
+          or urgent medical attention, we are committed to your well-being.
+           Book an appointment today and experience quality healthcare tailored 
+           to your needs.</p>    
+</section>
+
+<!-- Registration -->
+<section id="registration" class="flex flex-col justify-center items-center">
+    <h1 class=" m-5 mb-3 text-5xl font-extrabold">Registration</h1>
+    <div class="bg-white p-8 rounded-2xl shadow-lg w-[500px] justify-center">
+        <form>
+            <div class="mb-4">
+                <label class="block text-gray-700 font-bold mb-2">Full Name</label>
+                <input type="text" class="w-full px-4 py-2 border rounded-lg focus:outline-non focus:ring-2 focus:ring-blue-500" placeholder="Enter Your Full Name" required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 font-bold mb-2">Email</label>
+                <input type="email" class="w-full px-4 py-2 border rounded-lg focus:outline-non focus:ring-2 focus:ring-blue-500" placeholder="Enter Your Email" required>
+            </div>  
+            <div class="mb-4">
+                <label class="block text-gray-700 font-bold mb-2">Password</label>
+                <input type="password" class="w-full px-4 py-2 border rounded-lg focus:outline-non focus:ring-2 focus:ring-blue-500" placeholder="Enter Password" required>
+            </div>  
+            <div class="mb-4 text-gray-700">
+                <label class="block text-gray-700 font-bold mb-2">Gender</label>
+                <div class="flex gap-4">
+                    <label class="flex items-center">
+                   <input type="radio" name="gender" value="female" class=" mr-2" required/>Female</label>
+                   <label class="flex items-center">
+                    <input type="radio" name="gender" value="male" class="mr-2" required/>Male</label>
+                </div> 
+            </div> 
+            <div class="mb-4 text-gray-700">
+                <label class="flex items-center">
+                    <input type="checkbox" class="mr-2" required/>
+                    I agree to the terms and conditions
+                </label>
+            </div>  
+            <button type="reset" class="mb-2 w-20 bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-800 hover:rounded-full transition-all duration-1000 delay-10">Reset</button>  
+            <button type="submit" class="w-full bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-800 transition-colors">Register</button>  
+            </form>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <h1 class=" mt-10 text-5xl font-extrabold">Contact us</h1>
+    <div></div>
+</section>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    
+    
+</body>
+
+</html>
