@@ -1,0 +1,20 @@
+  h1{
+    margin: 3rem 0;
+    text-align: center;
+}
+/*.row{
+    border: 4px solid;
+    height: 400px;
+}
+.row *:nth-child(even){
+    background: #bbb;
+}
+.row *:nth-child(odd){
+    background-color: #888;
+}
+.row * {
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+    height: fit-content;
+}
